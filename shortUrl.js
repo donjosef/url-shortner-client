@@ -6,7 +6,7 @@ const displayUrl = (url) => {
     shortUrlContainer.innerHTML = ""
 
     const link = document.createElement('a')
-    link.href = 'https://www.shortdaurl.herokuapp.com/' + url.urlCode
+    link.href = 'https://shortdaurl.herokuapp.com/' + url.urlCode
     link.textContent = url.shortUrl
     link.target = '_blank'
     shortUrlContainer.appendChild(link)
