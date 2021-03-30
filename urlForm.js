@@ -8,7 +8,7 @@ const createShortUrl = async (e) => {
     const urlValue = urlInput.value
 
     try {
-        const res = await fetch('http://localhost:4000/api/url/shorten', {
+        const res = await fetch('https://shortdaurl.herokuapp.com/api/url/shorten', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
