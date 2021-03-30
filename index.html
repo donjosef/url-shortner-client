@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       body {
+           margin: auto;
+           width: 960px;
+           max-width: 90%;
+       } 
+
+       form {
+           background: #0B1736;
+           padding: 20px;
+           display: flex;
+           justify-content: space-between;
+       }
+
+       .url-input {
+           border-radius: 4px;
+           padding: 10px;
+           width: 80%;
+           border: none;
+       }
+
+       button {
+           width: 120px;
+           border-radius: 4px;
+           background: #2A5BD7;
+           color: white;
+           border: none;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Bitly clone</h1>
+    <form>
+        <input placeholder="shorten your URL" class="url-input" name="longurl">
+        <button>Shorten</button>
+    </form>
+
+    <section class="short-url"></section>
+    <!-- <script type="module "src="pubsub.js"></script> -->
+    <script type="module" src="urlForm.js"></script>
+     <script  type="module" src="shortUrl.js"></script>
+     <script  type="module" src="error.js"></script>
+</body>
+</html>
